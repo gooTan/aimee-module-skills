@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "module": "skills",
+  "classification": "required",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server"
+  ],
+  "principal_class": 1,
+  "principal_ref": 14,
+  "stages": [
+    {
+      "id": 1,
+      "name": "skill-context",
+      "event_kind": 7681
+    },
+    {
+      "id": 2,
+      "name": "skill-trigger-match",
+      "event_kind": 7682
+    }
+  ],
+  "source_sha256": "d2005ad81eecfc7ea6328b255ddec14a0f75173cb1607256c04776a3eae168b1",
+  "owned_files": [
+    "src/modules/skills/module.yaml",
+    "src/modules/skills/skill.c",
+    "src/modules/skills/skill_rollback.c",
+    "src/modules/skills/skill_trigger_policy.c",
+    "src/modules/skills/module_adapter.c",
+    "src/modules/skills/skill_trigger_policy.h",
+    "src/modules/skills/include/aimee/skills/skill.h",
+    "src/modules/skills/include/aimee/skills/module_api.h",
+    "src/tests/test_skill.c",
+    "docs/modules/skills.md",
+    "server-go/modules/skills/skills.go",
+    "server-go/modules/skills/skills_test.go"
+  ]
+}
